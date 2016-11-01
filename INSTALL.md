@@ -12,9 +12,25 @@ run as root.
     # curl -sL https://deb.nodesource.com/setup_6.x | bash -
     # apt-get install -y nodejs
 
+Or install using 'nvm':
+
+	$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+
+If the above doesn't fix the problem, open your .bash_profile and add the following line of code:
+
+	$ source ~/.bashrc
+
 Install dependencies via `npm`:
 
-    $ npm install
+    $ nvm install v6.2.0
+ 
+ After this, enter in the project folder and run:
+ 	
+ 	$ npm install
+
+ Then, run localhost:
+ 	
+ 	$ npm start
 
 If you are running polisServer locally, be sure to set
 the `SERVICE_URL` environment varible in the `.env_dev` file.
